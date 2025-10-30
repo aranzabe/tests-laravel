@@ -29,6 +29,17 @@ Los tests sirven para **verificar automáticamente que la aplicación funciona c
 
 ## 2️⃣ Tipos de tests
 
+
+
+| Tipo de test                                                | Descripción                                                                                     | Ejemplo                                                                       | ¿Laravel los soporta?                                                   |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| **Unit Test (Pruebas unitarias)**                           | Prueban una unidad pequeña de código (por ejemplo, un método o función).                        | Verificar que `User::isAdult()` devuelve `true` si la edad > 18.              | ✅ **Sí** (PHPUnit / Pest)                                               |
+| **Feature Test (Pruebas funcionales o de características)** | Prueban una funcionalidad completa del sistema: desde el controlador hasta el modelo.           | Verificar que un usuario puede registrarse correctamente.                     | ✅ **Sí**                                                                |
+| **Integration Test (Pruebas de integración)**               | Verifican cómo interactúan varios componentes (controlador + base de datos + servicio externo). | Crear un pedido y verificar que se registra en la BD y se envía un correo.    | ✅ **Sí**                                                                |
+
+
+
+
 Laravel organiza los tests en dos carpetas:
 
 ```bash
